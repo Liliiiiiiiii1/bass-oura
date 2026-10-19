@@ -42,10 +42,10 @@ The historical dataset contains annual Fitbit device sales from 2011 through 201
 |---:|---:|
 | 2011 | 0.200 |
 | 2012 | 1.300 |
-| 2013 | 4.500 |
-| 2014 | 10.900 |
-| 2015 | 21.400 |
-| 2016 | 22.300 |
+| 2013 | 4.476 |
+| 2014 | 10.904 |
+| 2015 | 21.355 |
+| 2016 | 22.295 |
 | 2017 | 15.343 |
 | 2018 | 13.939 |
 | 2019 | 15.988 |
@@ -85,8 +85,8 @@ The parameters are estimated by nonlinear least squares using SciPy's `curve_fit
 
 | Fitting period | \(p\) | \(q\) | \(M\) (millions) | \(R^2\) |
 |---|---:|---:|---:|---:|
-| 2011–2016 | 0.0026 | 1.2122 | 80.4 | 0.999 |
-| 2011–2019 | 0.0118 | 0.6746 | 121.7 | 0.821 |
+| 2011–2016 | 0.0026 | 1.2108 | 80.4 | 0.999 |
+| 2011–2019 | 0.0118 | 0.6744 | 121.7 | 0.821 |
 
 The parameter estimates are saved in `data/fitbit_bass_parameters.csv`.
 
@@ -98,7 +98,7 @@ The longer-window model has a lower \(R^2\), partly reflecting the decline and s
 
 ## 5. Predicted Diffusion of Oura Ring 4
 
-The forecast applies the longer-window Fitbit estimates, \(p=0.0118\) and \(q=0.6746\), as analogue parameters for Oura Ring 4. This approach assumes, for illustration, that Oura adoption may follow a diffusion pattern similar to a successful wearable device. It does not establish that Oura's actual innovation and imitation coefficients are equal to Fitbit's.
+The forecast applies the longer-window Fitbit estimates, \(p=0.0118\) and \(q=0.6744\), as analogue parameters for Oura Ring 4. This approach assumes, for illustration, that Oura adoption may follow a diffusion pattern similar to a successful wearable device. It does not establish that Oura's actual innovation and imitation coefficients are equal to Fitbit's.
 
 The forecast begins with 2025 as the first full calendar year following Oura Ring 4's October 2024 launch. Because reliable data on unique U.S. Oura Ring 4 adopters and total addressable adopters are not available in this analysis, the forecast uses three hypothetical market-potential scenarios.
 
